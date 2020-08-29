@@ -21,9 +21,10 @@ ActiveRecord::Schema.define(version: 2020_08_26_020351) do
   create_table "dogs", force: :cascade do |t|
     t.string "name"
     t.integer "breed_id"
-    t.integer "age"
+    t.float "age"
     t.string "location"
     t.text "description"
+    t.text "email"
     t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
